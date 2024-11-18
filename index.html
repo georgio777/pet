@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин Часов magA-Z</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!-- модальное меню -->
+  <div class="modal">
+    <div class="container">
+      <div class="modal__inner">
+        <span class="close__button">&#x2717</span>
+        <div class="personal__mobile">
+          <a href=""><img src="img\profile.svg" alt=""></a>
+          <a href=""><img src="img\cart.svg" alt=""></a>
+        </div>
+        <nav id="navigation__mobile">
+          <ul>
+            <li id="active"><a href="">главная</a></li>
+            <li id=""><a href="">shop</a></li>
+            <li id=""><a href="">новинки</a></li>
+            <li id=""><a href="">распродажа</a></li>
+            <li id=""><a href="">контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- конец модального меню -->
+   <!-- хэдэр -->
+  <header>
+    <a href="" class="hot__wrapper">
+      <div id="hot">
+        <div class="container">
+          <div class="hot__inner">
+            <p>рассрочка на 12 месяцев, тысячи новых моделей, выгодные предложения
+            </p>
+          </div>
+        </div>
+      </div>
+    </a>
+    <div class="header__navigation">
+      <div class="container">
+        <div class="navigation__inner">
+          <p id="logo"><a href="">magA-Z</a></p>
+          <nav id="navigation">
+            <ul>
+              <li id="active"><a href="">главная</a></li>
+              <li id=""><a href="">shop</a></li>
+              <li id=""><a href="">новинки</a></li>
+              <li id=""><a href="">распродажа</a></li>
+              <li id=""><a href="">контакты</a></li>
+            </ul>
+          </nav>
+          <div class="personal">
+            <a href=""><img src="img\profile.svg" alt=""></a>
+            <a href=""><img src="img\cart.svg" alt=""></a>
+          </div>
+          <img id="menu__button" src="img\menu.png" alt="">
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="container">
+      <div id="information">
+        <p>Watchersons - <span>настройся на новый ритм с переосмысленной класикой</span></p>
+        <a href=""><button id="get__information" class="button">
+          узнать подробнее
+        </button></a>
+      </div>
+    </div>
+  </header>
+  <!-- конец хэдэра -->
+  <!-- karusel -->
+  <div class="carousel">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href=""><img src="img\p1.png" alt=""></a></div>
+        <div class="swiper-slide"><a href=""><img src="img\p2.png" alt=""></a></div>
+        <div class="swiper-slide"><a href=""><img src="img\p3.png" alt=""></a></div>
+        <div class="swiper-slide"><a href=""><img src="img\p4.png" alt=""></a></div>
+      </div>
+      <div class="swiper-button-next btn"></div>
+      <div class="swiper-button-prev btn"></div>
+      <div class="swiper-pagination pgn"></div>
+    </div>
+  </div>
+
+  <!-- goods -->
+
+  <div class="goods__wrapper">
+    <div class="container">
+      <div class="goods__inner">
+
+        <a href="">
+          <div class="card">
+            <div class="item__photo__wrapper">
+              <img class="item__photo" src="img\item1.jpg" alt="">
+              <img class="special__offer" src="img\special.png" alt="">
+            </div>
+            <p class="item__name">Watchersons 1966, gold, швейцария</p>
+            <div class="item__price__wrapper">
+              <p class="actual__price">18 330</p>
+              <p class="former__price">24 950</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="card">
+            <div class="item__photo__wrapper">
+              <img class="item__photo" src="img\item2.jpg" alt="">
+              <img class="special__offer" src="img\special.png" alt="">
+            </div>
+            <p class="item__name">Watchersons 1254, silver gold, швейцария</p>
+            <div class="item__price__wrapper">
+              <p class="actual__price">15 111</p>
+              <p class="former__price"> 36 190</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="card">
+            <div class="item__photo__wrapper">
+              <img class="item__photo" src="img\item3.jpg" alt="">
+              <img class="special__offer" src="img\special.png" alt="">
+            </div>
+            <p class="item__name">Watchersons 1334, gold, швейцария</p>
+            <div class="item__price__wrapper">
+              <p class="actual__price">24 320</p>
+              <p class="former__price"> 41 990</p>
+            </div>
+          </div>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+   <footer>
+    <div class="container">
+      <div class="footer__inner">
+        <p class="logo">magA-Z</p>
+        <a class="phone" href="tel:123-456-7890">123-456-7890</a>
+        <a href="" class="bonus_program">бонусная программа</a>
+      </div>
+    </div>
+   </footer>
+  
+   <script src="js\main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>

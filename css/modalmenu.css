@@ -1,0 +1,55 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000d6;
+  z-index: 1000;
+  color: black;
+  overflow-y: scroll;
+}
+
+.modal__open {
+  display: block;
+ 
+}
+
+.modal__inner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+}
+
+.close__button {
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  cursor: pointer;
+}
+
+.personal__mobile {
+  display: flex;
+  width:120px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navigation__mobile ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+#navigation__mobile ul li {
+  margin: 20px 0;
+}
+
+

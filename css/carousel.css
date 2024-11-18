@@ -1,0 +1,46 @@
+
+.carousel {
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.swiper {
+  width:65%;
+  overflow: visible;
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+.btn {
+  color: grey;
+  display: none;
+}
+
+.swiper-pagination-bullet-active {
+  color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: -30px;
+}
