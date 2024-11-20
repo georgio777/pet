@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин Часов magA-Z</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="../style.css">
+    <script src="../js/turboloopa.js"></script>
+
+</head>
+<body>
+  <!-- <div class="loopa"></div> -->
+  <!-- модальное меню -->
+  <div class="modal">
+    <div class="container">
+      <div class="modal__inner">
+        <span class="close__button">&#x2717</span>
+        <div class="personal__mobile">
+          <a href=""><img src="../img/profile.svg" alt=""></a>
+          <a href=""><img src="../img/cart.svg" alt=""></a>
+        </div>
+        <nav id="navigation__mobile">
+          <ul>
+            <li id=""><a href="">главная</a></li>
+            <li id="active"><a href="">shop</a></li>
+            <li id=""><a href="">новинки</a></li>
+            <li id=""><a href="">распродажа</a></li>
+            <li id=""><a href="contacts.html">контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- конец модального меню -->
+   <!-- хэдэр -->
+  <header>
+    <a href="" class="hot__wrapper">
+      <div id="hot">
+        <div class="container">
+          <div class="hot__inner">
+            <p>рассрочка на 12 месяцев, тысячи новых моделей, выгодные предложения
+            </p>
+          </div>
+        </div>
+      </div>
+    </a>
+    <div class="header__navigation">
+      <div class="container">
+        <div class="navigation__inner">
+          <p id="logo"><a href="../index.html">magA-Z</a></p>
+          <nav id="navigation">
+            <ul>
+              <li id=""><a href="../index.html">главная</a></li>
+              <li id="active"><a href="">shop</a></li>
+              <li id=""><a href="">новинки</a></li>
+              <li id=""><a href="">распродажа</a></li>
+              <li id=""><a href="contacts.html">контакты</a></li>
+            </ul>
+          </nav>
+          <div class="personal">
+            <a href=""><img src="../img/profile.svg" alt=""></a>
+            <a href=""><img src="../img/cart.svg" alt=""></a>
+          </div>
+          <img id="menu__button" src="../img/menu.png" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- конец хэдэра -->
+
+  <!-- хлебные крошки -->
+
+  <div class="breadcrumbs__wrapper">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <ul class="breadcrumb__list">
+          <li class="breadcrumb__item"><a href="../index.html">главная</a></li>
+          <li class="breadcrumb__item"><a href="#">для мужчин</a></li>
+          <li class="breadcrumb__item"><a href="#">аналоговые</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+ 
+  <!-- товар -->
+
+  <div class="current__item--wrapper">
+    <div class="container">
+      <div class="current__item--inner">
+        <div class="item__img-wrapper img-magnifier-container"><img id="myimage" src="../img/item1.jpg" alt="" class="photoon"></div>
+        <div class="item__interraction--wrapper">
+          <p class="item__name grow">Watchersons 1334, gold, швейцария</p>
+          <div class="item__price__wrapper">
+            <span class="actual__price">24 320</span>
+            <span class="former__price"> 41 990</span>
+          </div>
+          <div class="item__payment--options grow">
+            <span class="installment__plan">2099  на 4 платежа</span>
+            <a class="installment__info">подробнее</a>
+            <a class="installment__go">&#8594</a>
+          </div>
+          <a href="" class=""><button id="add__to--cart" class="button">
+            добавить в корзину
+          </button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="current__item--info--wrapper">
+    <div class="container">
+      <div class="currenr__item--info--inner">
+        <div class="tabs">
+          <p class="tab active__tab" data-tab="1">описание</p>
+          <p class="tab" data-tab="2">характеристики</p>
+        </div>
+        <div class="tabs__content">
+          <p class="tab__content active__content" data-content="1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, tempora maiores magni est, quam officiis reprehenderit ut amet voluptas necessitatibus eligendi earum repellat. Animi maiores inventore eveniet. Maiores, sint dolores?</p>
+          <table class="tab__content" data-content="2">
+            <tr>
+              <td>Lorem</td>
+              <td>ipsum</td>
+            </tr>
+            <tr>
+              <td>dolor</td>
+              <td>sit amet</td>
+            </tr>
+            <tr>
+              <td>eligendi</td>
+              <td>1924</td>
+            </tr>
+            <tr>
+              <td>reprehenderit</td>
+              <td>voluptas</td>
+            </tr>
+            <tr>
+              <td>earum</td>
+              <td>quam</td>
+            </tr>
+            <tr>
+              <td>maiores</td>
+              <td>inventore</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- goods -->
+
+  <div class="goods__wrapper">
+    <div class="container">
+      <h1>похожие товары</h1>
+      <div class="goods__inner">
+
+        <a href="">
+          <div class="card">
+            <div class="item__photo__wrapper">
+              <img  class="item__photo" src="../img/item1.jpg" alt="">
+              <img class="special__offer" src="../img/special.png" alt="">
+            </div>
+            <p class="item__name">Watchersons 1966, gold, швейцария</p>
+            <div class="item__price__wrapper">
+              <p class="actual__price">18 330</p>
+              <p class="former__price">24 950</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="card">
+            <div class="item__photo__wrapper">
+              <img class="item__photo" src="../img/item2.jpg" alt="">
+              <img class="special__offer" src="../img/special.png" alt="">
+            </div>
+            <p class="item__name">Watchersons 1254, silver gold, швейцария</p>
+            <div class="item__price__wrapper">
+              <p class="actual__price">15 111</p>
+              <p class="former__price"> 36 190</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="card">
+            <div class="item__photo__wrapper">
+              <img class="item__photo" src="../img/item3.jpg" alt="">
+              <img class="special__offer" src="../img/special.png" alt="">
+            </div>
+            <p class="item__name">Watchersons 1334, gold, швейцария</p>
+            <div class="item__price__wrapper">
+              <p class="actual__price">24 320</p>
+              <p class="former__price"> 41 990</p>
+            </div>
+          </div>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+   <footer>
+    <div class="container">
+      <div class="footer__inner">
+        <p class="logo">magA-Z</p>
+        <a class="phone" href="tel:123-456-7890">123-456-7890</a>
+        <a href="" class="bonus_program">бонусная программа</a>
+      </div>
+    </div>
+   </footer>
+  
+   <script src="../js/main.js"></script>
+   <script src="../js/tabs.js"></script>
+   <script>
+    /* Execute the magnify function: */
+    magnify("myimage", 3);
+    /* Specify the id of the image, and the strength of the magnifier glass: */
+    </script>
+   <script src="../js/loopa.js"></script>
+</body>
+</html>

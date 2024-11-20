@@ -1,6 +1,8 @@
 @import url("/css/carousel.css");
 @import url("/css/modalmenu.css");
 @import url("/css/goods.css");
+@import url("/css/breadcrumbs.css");
+@import url("/css/itempage.css");
 
 body {
   font-family: "Roboto", sans-serif;
@@ -255,7 +257,7 @@ width: 100%;
     padding: 5px;
   }
 
-  #information button {
+  button {
     font-size: 20px;
   }
 
@@ -280,4 +282,31 @@ width: 100%;
     flex-direction: column;
     padding: 10px 0;
   }
+}
+
+h1 {
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.contacts__map--wrapper {
+  margin: 50px 0;
+}
+
+.other__contacts--inner p {
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+  font-weight: 200;
+}
+
+.other__contacts--inner a {
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+  font-weight: 200;
+}
+
+.other__contacts--wrapper {
+  margin: 50px 0;
 }
