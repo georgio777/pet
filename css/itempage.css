@@ -84,6 +84,18 @@
   width: 70%;
 }
 
+#add__to--cart:disabled {
+  background-color: #585858;
+}
+
+#add__to--cart:disabled:hover {
+  transform: scale(100%);
+  -webkit-transform: scale(100%);
+  -moz-transform: scale(100%);
+  -ms-transform: scale(100%);
+  -o-transform: scale(100%);
+}
+
 .item__price__wrapper {
 }
 

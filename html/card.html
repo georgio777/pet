@@ -13,7 +13,6 @@
 
 </head>
 <body>
-  <!-- <div class="loopa"></div> -->
   <!-- модальное меню -->
   <div class="modal">
     <div class="container">
@@ -35,6 +34,31 @@
       </div>
     </div>
   </div>
+
+  <div class="modal__cart">
+    <div id="mycart">
+      <p class="close__cart">&#x2717</p>
+      <div class="mycart__item">
+        <img src="../img/item1.jpg" alt="" class="mycart__img"> 
+        <div class="mycart__item--info--wrapper">
+          <p class="mycart__item--name">Watchersons 1334, gold, швейцария</p>
+          <p class="mycart__item--totalprice">24 320</p>
+        </div>
+        <div class="mycart__item--quantyty">
+          <p class="quantyty__number">Количество</p>
+          <div class="quantyty__buttons">
+            <button class="quantyty__minus">-1</button>
+            <button class="quantyty__plus">+1</button></div>
+          </div>  
+        </div>
+        <div class="checkout">
+          checkout
+        </div>
+      </div>
+      
+    </div>  
+  </div>
+
   <!-- конец модального меню -->
    <!-- хэдэр -->
   <header>
@@ -91,21 +115,21 @@
   <div class="current__item--wrapper">
     <div class="container">
       <div class="current__item--inner">
-        <div class="item__img-wrapper img-magnifier-container"><img id="myimage" src="../img/item1.jpg" alt="" class="photoon"></div>
+        <div class="item__img-wrapper img-magnifier-container"><img id="myimage" src="" alt="" class="photoon"></div>
         <div class="item__interraction--wrapper">
-          <p class="item__name grow">Watchersons 1334, gold, швейцария</p>
+          <p class="item__name grow"></p>
           <div class="item__price__wrapper">
-            <span class="actual__price">24 320</span>
-            <span class="former__price"> 41 990</span>
+            <span class="actual__price"></span>
+            <span class="former__price"></span>
           </div>
           <div class="item__payment--options grow">
             <span class="installment__plan">2099  на 4 платежа</span>
             <a class="installment__info">подробнее</a>
             <a class="installment__go">&#8594</a>
           </div>
-          <a href="" class=""><button id="add__to--cart" class="button">
+          <button id="add__to--cart" class="button">
             добавить в корзину
-          </button></a>
+          </button>
         </div>
       </div>
     </div>
@@ -119,32 +143,8 @@
           <p class="tab" data-tab="2">характеристики</p>
         </div>
         <div class="tabs__content">
-          <p class="tab__content active__content" data-content="1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, tempora maiores magni est, quam officiis reprehenderit ut amet voluptas necessitatibus eligendi earum repellat. Animi maiores inventore eveniet. Maiores, sint dolores?</p>
+          <p class="tab__content active__content" data-content="1"></p>
           <table class="tab__content" data-content="2">
-            <tr>
-              <td>Lorem</td>
-              <td>ipsum</td>
-            </tr>
-            <tr>
-              <td>dolor</td>
-              <td>sit amet</td>
-            </tr>
-            <tr>
-              <td>eligendi</td>
-              <td>1924</td>
-            </tr>
-            <tr>
-              <td>reprehenderit</td>
-              <td>voluptas</td>
-            </tr>
-            <tr>
-              <td>earum</td>
-              <td>quam</td>
-            </tr>
-            <tr>
-              <td>maiores</td>
-              <td>inventore</td>
-            </tr>
           </table>
         </div>
       </div>
@@ -218,6 +218,8 @@
   
    <script src="../js/main.js"></script>
    <script src="../js/tabs.js"></script>
+   <script src="../js/item.js"></script>
+   <script src="../js/cart.js"></script>
    <script>
     /* Execute the magnify function: */
     magnify("myimage", 3);

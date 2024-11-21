@@ -3,6 +3,7 @@
 @import url("/css/goods.css");
 @import url("/css/breadcrumbs.css");
 @import url("/css/itempage.css");
+@import url("/css/mycart.css");
 
 body {
   font-family: "Roboto", sans-serif;
