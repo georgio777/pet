@@ -10,7 +10,7 @@ const itemChar = document.querySelector('.tab__content[data-content="2"');
 // вся информация об отображаемом товаре
 const item = {
   name: "Watchersons 1334, gold, швейцария",
-  currentPrice: "24 320",
+  currentPrice: 24320,
   formerPrice: "41 990",
   articleNumber: "123123",
   imgURL: "../img/item1.jpg",
@@ -60,8 +60,10 @@ addToCart.addEventListener('click', ()=>{
   addToCart.setAttribute('disabled', true);
   addToCart.textContent = "в корзине";
   addToCartHandler(item);
+  // вызывает функцию для появления и отрисовки в корзине. сама функция находится в cart.js
+  cartCreator()
 })
 
 
 // clear localstorage on reload
-window.onload = window.localStorage.clear();
+// window.onload = window.localStorage.clear();

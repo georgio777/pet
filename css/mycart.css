@@ -82,3 +82,32 @@
   height: 100%;
   z-index: 2000;
 }
+
+.checkout {
+    margin: auto 0 10px 10px;
+    width: 70%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.none {
+  display: none;
+}
+
+.clear__cart {
+  margin: 10px;
+  width: 70%;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  background-color: red;
+}

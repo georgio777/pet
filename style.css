@@ -130,10 +130,13 @@ nav ul li:hover {
   justify-content: space-between;
   max-width: 130px;
   width: 100%;
-  
 }
 
-.personal a:hover {
+.personal img {
+  cursor: pointer;
+}
+
+.personal img:hover {
   transform: scale(105%);
 }
 
