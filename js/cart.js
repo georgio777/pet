@@ -76,10 +76,12 @@ function cartCreator() {
   // фикс ссылки для индекс хтмл
   let watchUrl = itemFromLocalStorage.imgURL;
   
-  if (window.location.pathname.includes("index")) {
+  if (window.location.pathname.includes("index") || window.location.pathname == "/pet/index.html") {
     watchUrl = itemFromLocalStorage.indexImgUrl;
-    console.log(watchUrl);
-  } 
+    console.log(watchUrl + " hello index");
+  } else {
+    console.log(window.location.pathname);
+  }
   
   document.querySelector('.mycart__item').innerHTML = `<img src="${watchUrl}" alt="" class="mycart__img"> 
           <div class="mycart__item--info--wrapper">
