@@ -28,7 +28,7 @@ if (localStorage.getItem('cart')) {
   cartCreator()
   cartInform.classList.add('active__cart')
 } else {
-  console.log('cart is false')
+  cartInform.classList.remove('active__cart')
 }
 
 
@@ -62,6 +62,7 @@ function cartCreator() {
     itemContainer.remove();
     checkoutButton.remove();
     clearButton.remove();
+    cartInform.classList.remove('active__cart')
   })
 
   //  создаем контейнер товара

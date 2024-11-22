@@ -60,9 +60,10 @@ itemChar.innerHTML = item.characteristics;
 addToCart.addEventListener('click', ()=>{
   addToCart.setAttribute('disabled', true);
   addToCart.textContent = "в корзине";
-  addToCartHandler(item);
-  // вызывает функцию для появления и отрисовки в корзине. сама функция находится в cart.js
-  cartCreator()
+  if (!localStorage.getItem('cart')) {
+    addToCartHandler(item);
+    cartCreator();  
+  }
 })
 
 
