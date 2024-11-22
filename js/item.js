@@ -60,6 +60,7 @@ itemChar.innerHTML = item.characteristics;
 addToCart.addEventListener('click', ()=>{
   addToCart.setAttribute('disabled', true);
   addToCart.textContent = "в корзине";
+  // проверяем нет ли товара в локальном хранилище чтобы не было дублирований
   if (!localStorage.getItem('cart')) {
     addToCartHandler(item);
     cartCreator();  
