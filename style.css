@@ -140,6 +140,13 @@ nav ul li:hover {
   transform: scale(105%);
 }
 
+.cart__container {
+  display: flex;
+  position: relative;
+}
+
+
+
 #menu__button {
   display: none;
   width: 45px;

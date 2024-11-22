@@ -111,3 +111,21 @@
   -o-border-radius: 0;
   background-color: red;
 }
+
+.cart__inform {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: red;
+}
+
+.active__cart {
+  display: flex;
+}

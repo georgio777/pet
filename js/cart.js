@@ -1,6 +1,8 @@
 const cartIcon = document.querySelector('.cart__img');
 const cartModal = document.querySelector('.modal__cart');
 const closeCartIcon = document.querySelector('.close__cart');
+const cartInform = document.querySelector('.cart__inform');
+
 
 // открытие закрытие модального окна корзины
 cartIcon.addEventListener('click', ()=>{
@@ -17,6 +19,17 @@ window.addEventListener('click', (e)=>{
   }
 })
 
+// добавляет красную бляшку когда корзина не пуста
+
+
+
+// проверяем локальное хранилище на наличие изменений в корзине
+if (localStorage.getItem('cart')) {
+  cartCreator()
+  cartInform.classList.add('active__cart')
+} else {
+  console.log('cart is false')
+}
 
 
 function updatePrice(counter, initialPrice) {
@@ -26,17 +39,18 @@ function updatePrice(counter, initialPrice) {
 
 
 
-  // находим родителя в которого будем помещать товар
-  const cartContainer = document.querySelector('#mycart')
 
 
-// ффункция вызывается при клике кнопки добавить в корзину и отрисовывает добавленный в корзину элемент из local storage
+// ффункция вызывается при 1) если в localstorage записан cart со значением true 2) при клике кнопки добавить в корзину и отрисовывает добавленный в корзину элемент из local storage
 
 function cartCreator() {
+  cartInform.classList.add('active__cart')
   // вызов из локального хранилища
   const itemFromLocalStorage = JSON.parse(localStorage.getItem('item'));  
 
    // создаем очиститель корзины и локального хранилища
+  // находим родителя в которого будем помещать товар
+  const cartContainer = document.querySelector('#mycart')
 
    const clearButton = document.createElement('button')
    clearButton.classList.add('clear__cart')

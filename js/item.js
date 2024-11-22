@@ -52,6 +52,7 @@ itemChar.innerHTML = item.characteristics;
 // добавляет в корзину и local storage 
  function addToCartHandler(item) {
   localStorage.setItem('item', JSON.stringify(item));
+  localStorage.setItem('cart', true);
 }
 
 // обработка по клику кнопки "добавить в корзину"

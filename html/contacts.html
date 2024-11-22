@@ -34,6 +34,15 @@
     </div>
   </div>
   <!-- конец модального меню -->
+     <!-- тележка -->
+  <div class="modal__cart none">
+    <div id="mycart">
+      <p class="close__cart">&#x2717</p>
+    </div>
+      
+    </div>  
+  </div>
+
    <!-- хэдэр -->
   <header>
     <a href="" class="hot__wrapper">
@@ -61,7 +70,10 @@
           </nav>
           <div class="personal">
             <a href=""><img src="../img/profile.svg" alt=""></a>
-            <a href=""><img src="../img/cart.svg" alt=""></a>
+            <div class="cart__container">
+              <img class="cart__img" src="../img/cart.svg" alt="">
+              <div class="none cart__inform"></div>
+            </div>
           </div>
           <img id="menu__button" src="../img/menu.png" alt="">
         </div>
@@ -101,7 +113,7 @@
   </div>
 
   <!-- footer -->
-   <footer>
+  <footer>
     <div class="container">
       <div class="footer__inner">
         <p class="logo">magA-Z</p>
@@ -109,8 +121,9 @@
         <a href="" class="bonus_program">бонусная программа</a>
       </div>
     </div>
-   </footer>
+  </footer>
   
-   <script src="../js/main.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/cart.js"></script>
 </body>
 </html>
