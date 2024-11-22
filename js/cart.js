@@ -75,6 +75,8 @@ function cartCreator() {
   
   // фикс ссылки для индекс хтмл
   let watchUrl = itemFromLocalStorage.imgURL;
+  console.log(window.location.pathname);
+  
   if (window.location.pathname == "/index.html") {
     watchUrl = itemFromLocalStorage.indexImgUrl;
     console.log(watchUrl);
