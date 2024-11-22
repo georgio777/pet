@@ -14,7 +14,7 @@ const item = {
   formerPrice: "41 990",
   articleNumber: "123123",
   imgURL: "../img/item1.jpg",
-  indexImgUrl: "img/item1.jpg",
+  indexImgUrl: "/img/item1.jpg",
   description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, tempora maiores magni est, quam officiis reprehenderit ut amet voluptas necessitatibus eligendi earum repellat. Animi maiores inventore eveniet. Maiores, sint dolores?",
   characteristics: `<tr>
               <td> Lorem</td>

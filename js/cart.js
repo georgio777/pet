@@ -13,11 +13,11 @@ closeCartIcon.addEventListener('click', ()=>{
   cartModal.classList.add('none')
 })
 
-// window.addEventListener('click', (e)=>{
-//   if (e.target == cartModal) {
-//     cartModal.classList.add('none')
-//   }
-// })
+window.addEventListener('click', (e)=>{
+  if (e.target == cartModal) {
+    cartModal.classList.add('none')
+  }
+})
 
 // добавляет красную бляшку когда корзина не пуста
 
@@ -72,14 +72,12 @@ function cartCreator() {
   
   
   cartContainer.appendChild(itemContainer)
-
-  console.log(itemFromLocalStorage.imgURL);
-  console.log(window.location.pathname)
   
   // фикс ссылки для индекс хтмл
-  let watchUrl = itemFromLocalStorage.imgURL
+  let watchUrl = itemFromLocalStorage.imgURL;
   if (window.location.pathname == "/index.html") {
     watchUrl = itemFromLocalStorage.indexImgUrl;
+    console.log(watchUrl);
   } 
   
   document.querySelector('.mycart__item').innerHTML = `<img src="${watchUrl}" alt="" class="mycart__img"> 
