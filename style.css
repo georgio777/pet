@@ -109,8 +109,12 @@ nav ul {
  
 }
 
-nav ul li:hover {
-  font-size: 33px;
+.nav__item:hover {
+  transform: scale(104%);
+  -webkit-transform: scale(104%);
+  -moz-transform: scale(104%);
+  -ms-transform: scale(104%);
+  -o-transform: scale(104%);
 }
 
 #active {

@@ -5,9 +5,18 @@ ul.breadcrumb__list li+li:before {
   font-size: 20px;
 }
 
-.breadcrumb__list li a {
+.breadcrumb__item a {
+  display: inline-block;
   color: black;
   font-size: 20px;
+}
+
+.breadcrumb__item > a:hover {
+  transform: scale(105%);
+  -webkit-transform: scale(105%);
+  -moz-transform: scale(105%);
+  -ms-transform: scale(105%);
+  -o-transform: scale(105%);
 }
 
 .breadcrumb__list {
